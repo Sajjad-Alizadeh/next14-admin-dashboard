@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./linkItem.module.css";
+import styles from "./menuLink.module.css";
 import {usePathname} from "next/navigation";
 
-function LinkItem({item}) {
+export function MenuLink({item}) {
     const pathname = usePathname()
 
     return(
@@ -14,5 +14,3 @@ function LinkItem({item}) {
         </Link>
     )
 }
-
-export default LinkItem;

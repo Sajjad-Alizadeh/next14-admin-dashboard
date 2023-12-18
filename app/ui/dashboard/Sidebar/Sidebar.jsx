@@ -7,7 +7,7 @@ import {
     MdWork
 } from "react-icons/md";
 import Image from "next/image";
-import LinkItem from "@/app/ui/dashboard/Sidebar/LinkItem";
+import MenuLink from "@/app/ui/dashboard/Sidebar/MenuLink";
 import styles from "./sidebar.module.css";
 
 const items = [
@@ -95,7 +95,7 @@ export function Sidebar() {
                         <li key={category.title}>
                             <span className={styles.category}>{category.title}</span>
                             {category.list.map((menuLink) => (
-                                <LinkItem key={menuLink.title} item={menuLink}/>
+                                <MenuLink key={menuLink.title} item={menuLink}/>
                             ))}
                         </li>
                     ))
