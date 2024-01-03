@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import MenuLink from "@/app/ui/dashboard/Sidebar/MenuLink";
 import styles from "./sidebar.module.css";
+import Link from "next/link";
 
 const items = [
     {
@@ -101,7 +102,7 @@ export function Sidebar() {
                     ))
                 }
             </ul>
-            <button className={styles.logout}><MdLogout/>Logout</button>
+            <Link className={styles.logout} href={"/login"}><MdLogout/>Logout</Link>
         </div>
     )
 }
