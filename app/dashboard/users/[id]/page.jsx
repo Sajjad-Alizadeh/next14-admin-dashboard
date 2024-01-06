@@ -21,9 +21,9 @@ async function SingleUserPage({params}) {
                 <form action={updateUser} className={styles.form}>
                     <input type="hidden" value={id} name={"id"}/>
                     <label>Username</label>
-                    <input type="text" name="username" defaultValue={username} placeholder="John Doe"/>
+                    <input type="text" name="username" defaultValue={username} placeholder="Sajjad Alizadeh"/>
                     <label>Email</label>
-                    <input type="email" name="email" defaultValue={email} placeholder="JohnDoe@gmail.com"/>
+                    <input type="email" name="email" defaultValue={email} placeholder="Sajjad@gmail.com"/>
                     <label>Password</label>
                     <input type="password" name="password" defaultValue={password} placeholder="****"/>
                     <label>Phone</label>

@@ -19,7 +19,7 @@ export const Transactions = () => {
                     <td>
                         <div className={styles.user}>
                             <Image src={"/noavatar.png"} alt={""} width={40} height={40} className={styles.userImage}/>
-                            John Doe
+                            Sajjad Alizadeh
                         </div>
 
                     </td>
@@ -35,7 +35,7 @@ export const Transactions = () => {
                     <td>
                         <div className={styles.user}>
                             <Image src={"/noavatar.png"} alt={""} width={40} height={40} className={styles.userImage}/>
-                            John Doe
+                            Sajjad Alizadeh
                         </div>
 
                     </td>
@@ -51,7 +51,7 @@ export const Transactions = () => {
                     <td>
                         <div className={styles.user}>
                             <Image src={"/noavatar.png"} alt={""} width={40} height={40} className={styles.userImage}/>
-                            John Doe
+                            Sajjad Alizadeh
                         </div>
 
                     </td>
@@ -67,7 +67,7 @@ export const Transactions = () => {
                     <td>
                         <div className={styles.user}>
                             <Image src={"/noavatar.png"} alt={""} width={40} height={40} className={styles.userImage}/>
-                            John Doe
+                            Sajjad Alizadeh
                         </div>
 
                     </td>
@@ -83,7 +83,7 @@ export const Transactions = () => {
                     <td>
                         <div className={styles.user}>
                             <Image src={"/noavatar.png"} alt={""} width={40} height={40} className={styles.userImage}/>
-                            John Doe
+                            Sajjad Alizadeh
                         </div>
 
                     </td>
