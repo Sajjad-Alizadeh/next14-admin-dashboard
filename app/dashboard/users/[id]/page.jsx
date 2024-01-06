@@ -1,7 +1,6 @@
 import styles from "@/app/ui/dashboard/users/singleUser/singleUser.module.css";
 import Image from "next/image";
 import {fetchUser} from "@/lib/data";
-import {use} from "bcrypt/promises";
 import {updateUser} from "@/lib/actions";
 
 async function SingleUserPage({params}) {

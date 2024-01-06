@@ -9,9 +9,7 @@ import {
 import Image from "next/image";
 import MenuLink from "@/app/ui/dashboard/Sidebar/MenuLink";
 import styles from "./sidebar.module.css";
-import Link from "next/link";
 import {auth, signOut} from "@/app/auth";
-import {use} from "bcrypt/promises";
 
 const items = [
     {
@@ -84,13 +82,12 @@ const items = [
 
 export async function Sidebar() {
     const {user} = await auth()
-    console.log(user)
     return (
         <div className={styles.container}>
             <div className={styles.user}>
                 <Image className={styles.userImage} src={"/noavatar.png"} alt={"user"} width={50} height={50}/>
                 <div className={styles.userDetail}>
-                    <span className={styles.username}>ASd</span>
+                    <span className={styles.username}>{user.username}</span>
                     <span className={styles.userTitle}>Administrator</span>
                 </div>
             </div>
@@ -109,8 +106,9 @@ export async function Sidebar() {
             <form action={async () => {
                 "use server"
                 await signOut()
-            }}></form>
-            <button className={styles.logout}><MdLogout/>Logout</button>
+            }}>
+                <button className={styles.logout}><MdLogout/>Logout</button>
+            </form>
         </div>
     )
 }
