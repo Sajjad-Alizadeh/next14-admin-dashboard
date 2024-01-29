@@ -53,6 +53,7 @@ async function UsersPage({searchParams}) {
                                     </Link>
                                     <form action={deleteUser}>
                                         <input type="hidden" value={user.id} name="id"/>
+                                        <input type="hidden" value={user.username} name="username"/>
                                         <button className={`${styles.button} ${styles.delete}`}>Delete</button>
                                     </form>
                                 </div>
