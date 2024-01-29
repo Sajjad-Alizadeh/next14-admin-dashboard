@@ -9,6 +9,7 @@ export const LoginForm = () => {
     return (
         <form action={formAction} className={styles.form}>
             <h1>Login</h1>
+            <span className={styles.hint}>username & password: admin</span>
             <input type="text" name={"username"} placeholder={"username"}/>
             <input type="password" name={"password"} placeholder={"password"}/>
             <button>Login</button>
